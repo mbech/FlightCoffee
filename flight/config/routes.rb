@@ -1,7 +1,10 @@
 Flight::Application.routes.draw do
+  devise_for :users
   get "welcome/index"
 
   root 'welcome#index'
+
+  get 'users/sign_up' => 'user#sign_up', as: :sign_up
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
