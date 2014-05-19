@@ -49,3 +49,6 @@ end
 
 # Use Devise for user authentication
 gem 'devise'
+
+# Stripe for online recurring payments
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
