@@ -1,9 +1,30 @@
+/**{
+  border: 1px solid red;
+}*/
+
 .title-text{
   font-family: 'Droid Serif', serif;
   font-style: italic;
+  width: 50%;
+  display: inline-block;
+  float:left;
 }
 
 .bean-description a img{
-  height: 10em;
   width: 10em;
+}
+
+#main-container{
+  border:3px solid black;
+}
+
+#top-notifications{
+  margin: auto;
+  width: 50%;
+}
+
+#top-notifications p{
+  display: inline;
+  float:right;
+  margin: auto;
 }
