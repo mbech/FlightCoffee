@@ -10,57 +10,38 @@
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif:700italic' rel='stylesheet' type='text/css'>
   </head>
   <body>
-
-<div class="row">
-  <div class="8 columns">
-    <h1 class="title-text">Flight | Coffee</h1>
-  </div>
-  <div class="4 columns" id="top-notifications">
-    <% if notice %>
-      <p class="alert alert-success"><%= notice %></p>
-    <% end %>
-    <% if alert %>
-      <p class="alert alert-danger"><%= alert %></p>
-    <% end %>
-  </div>
-</div>
-
-<div class="row">
-  <div class="twelve columns">
-    <nav class="top-bar">
-      <ul>
-        <!-- Title Area -->
-        <li class="name">
-          <h1>
-            <a href="./index.html">
-              Flight
-            </a>
-          </h1>
-        </li>
-      </ul>
-
-    </nav>
-  </div>
-</div>
-
+    <div class="row">
+      <div class="8 columns">
+        <h1 class="title-text">Flight | Coffee</h1>
+      </div>
+      <div class="4 columns" id="top-notifications">
+        <% if notice %>
+          <p class="alert alert-success"><%= notice %></p>
+        <% end %>
+        <% if alert %>
+          <p class="alert alert-danger"><%= alert %></p>
+        <% end %>
+      </div>
+    </div>
 
     <div class="row">
       <div class="large-12 columns">
-        <div class="panel">
-          <h3>Welcome to Flight</h3>
-          <p>Check out this weeks coffee flight, based our theme of the week.</p>
-          <p>If they look good, subscribe and we'll ship some to you.</p>
+        <dl class="tabs two-up">
+          <dd class="active"><%= link_to "Flite Coffee", root_path %></dd>
+          <dd><a href="#evenTab2">Your Account</a></dd>
+        </dl>
+
+          <h3>Welcome to Flite Coffee, check out this week's roast</h3>
+          <p>(Subscribe and we'll ship some to you).</p>
           <div class="row">
-            <div class="large-4 medium-4 columns">
-          <p><a href="./coffee1.html"><img src="http://i.imgur.com/CWssFml.jpg" alt=""></a><br />Light Roast; light, fruity, etc.</p>
-        </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://github.com/zurb/foundation"><img src="http://i.imgur.com/CWssFml.jpg"  alt=""></a><br />Medium Roast; fuller, deeper, etc.</p>
+            <div class="12 columns">
+              <div class="bean-description">
+                <a href="http://github.com/zurb/foundation">
+                  <img src="http://i.imgur.com/CWssFml.jpg"  alt="">
+                    </a>
+                    <p>Medium Roast; fuller, deeper, etc.</p>
+              </div>
             </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://twitter.com/foundationzurb"><img src="http://i.imgur.com/CWssFml.jpg" alt=""></a><br />Dark Roast; strong, smokey, etc.</p>
-            </div>
-        </div>
         </div>
       </div>
     </div>
