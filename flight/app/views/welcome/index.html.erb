@@ -12,8 +12,16 @@
   <body>
 
 <div class="row">
-  <div class="twelve columns">
+  <div class="8 columns">
     <h1 class="title-text">Flight | Coffee</h1>
+  </div>
+  <div class="4 columns" id="top-notifications">
+    <% if notice %>
+      <p class="alert alert-success"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
   </div>
 </div>
 
@@ -40,8 +48,8 @@
       <div class="large-12 columns">
         <div class="panel">
           <h3>Welcome to Flight</h3>
-          <p>Check out this weeks coffee flight, based our in-house expert's theme of the week.</p>
-          <p>If they look good, subscribe and we'll ship them to you ASAP.</p>
+          <p>Check out this weeks coffee flight, based our theme of the week.</p>
+          <p>If they look good, subscribe and we'll ship some to you.</p>
           <div class="row">
             <div class="large-4 medium-4 columns">
           <p><a href="./coffee1.html"><img src="http://i.imgur.com/CWssFml.jpg" alt=""></a><br />Light Roast; light, fruity, etc.</p>
