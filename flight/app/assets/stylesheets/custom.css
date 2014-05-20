@@ -3,7 +3,7 @@
   font-style: italic;
 }
 
-.bean-image{
-  height: 5em;
-  width: 5em;
+.bean-description a img{
+  height: 10em;
+  width: 10em;
 }
