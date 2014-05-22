@@ -52,3 +52,6 @@ gem 'devise'
 
 # Stripe for online recurring payments
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+
+# Gem to serve static assets for heroku
+gem 'rails_12factor', group: :production
