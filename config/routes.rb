@@ -6,6 +6,8 @@ Flight::Application.routes.draw do
 
   get 'users/sign_up' => 'user#sign_up', as: :sign_up
 
+  resources :charges
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
