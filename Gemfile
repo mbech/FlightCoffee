@@ -55,3 +55,6 @@ gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 # Gem to serve static assets for heroku
 gem 'rails_12factor', group: :production
+
+# Gem to handle secure loading of environment variables
+gem 'figaro'
