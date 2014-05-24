@@ -1,5 +1,6 @@
 <%= form_tag charges_path do %>
   <article>
+    <h2>Ready to subscribe?  Click the button below to make a payment.</h2>
     <label class="amount">
       <span>Amount: $12.00</span>
     </label>
@@ -7,6 +8,6 @@
 
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          data-description="A month's subscription"
-          data-amount="500"></script>
+          data-description="Subscribe for $12 to receive our roast every other week."
+          data-amount="1200"></script>
 <% end %>
