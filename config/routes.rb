@@ -8,6 +8,8 @@ Flight::Application.routes.draw do
 
   resources :charges
 
+  resources :users
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

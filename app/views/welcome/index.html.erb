@@ -25,7 +25,9 @@
       <div class="large-12 columns" id="main-container">
         <dl class="tabs two-up">
           <dd class="active"><%= link_to "Our Coffee", root_path %></dd>
-          <dd><a href="#evenTab2">Your Account</a></dd>
+          <% if user_signed_in? %>
+            <dd><%= link_to "Your Account", current_user %></dd>
+          <% end %>
         </dl>
           <div class="row"> <!-- Everything in this div should probably be a partial (e.g. welcome, user account) -->
             <div class="8 columns bean-description">
