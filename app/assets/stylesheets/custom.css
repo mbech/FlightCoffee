@@ -2,6 +2,10 @@
   border: 1px solid red;
 }*/
 
+body{
+  background-color: rgb(255, 233, 73);
+}
+
 .title-text{
   font-family: 'Droid Serif', serif;
   font-style: italic;
@@ -15,6 +19,7 @@
 }
 
 #main-container{
+  background-color: white;
   border:3px solid black;
 }
 
