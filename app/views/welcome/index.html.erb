@@ -41,8 +41,11 @@
         </div>
       <% if !user_signed_in? %>
       <div class="row">
-        <div class="8 columns">
-          <%= link_to "Sign in or Sign up!".html_safe, sign_up_path, :class => "button expand" %>
+        <div class="large-6 columns">
+          <%= link_to "Sign up".html_safe, sign_up_path, :class => "button expand" %>
+        </div>
+        <div class="large-6 columns">
+          <%= link_to "Log in".html_safe, new_user_session_path, :class => "button expand" %>
         </div>
       </div>
       <% end %>
